@@ -1,0 +1,4 @@
+.header-img img{
+  inline-size: 100%;
+  object-fit: cover;
+}
