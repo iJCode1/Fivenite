@@ -13,7 +13,7 @@
 }
 .moreInformation-cta{
   background-color: var(--primary);
-  display: inline-block;
+  display: none;
   font: var(--cta);
   color: var(--black);
   text-decoration: none;
@@ -23,7 +23,6 @@
   padding-block-start: 2rem;
   position: absolute;
   inset-block-start: calc(90% - 8rem);
-  /* inset-block-end: 8rem; */
   transition: .3s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -32,4 +31,9 @@
 }
 .moreInformation-cta:active{
   transform: scale(.9);
+}
+@media screen and (min-width: 768px){
+  .moreInformation-cta{
+    display: inline-block;
+  }
 }
