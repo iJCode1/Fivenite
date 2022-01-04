@@ -1,4 +1,70 @@
 .navbar{
-  block-size: 4.5rem;
-  border: 2px solid red;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+}
+.navbarOne{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-inline-start: 1rem;
+  padding-block-end: .5rem;
+  padding-block-start: .5rem;
+}
+.navbarOne-list{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.navbarOne-link{
+  text-decoration: none;
+  font: var(--body2-semibold);
+  color: var(--grey);
+  text-transform: uppercase;
+}
+.navbarOne-link:hover{
+  color: var(--white);
+  text-decoration: underline;
+}
+.navbarTwo{
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+}
+.navbarTwo-icons{
+  display: flex;
+  gap: 2rem;
+}
+.navbarTwo-icon{
+  display: inline-block;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  background-image: url('../assets/icons/search.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.navbarTwo-icon:nth-of-type(2){
+  background-image: url('../assets/icons/globe.svg');
+}
+.navbarTwo-login,
+.navbarTwo-download{
+  font: var(--body2-semibold);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  block-size: 100%;
+  display: inline-block;
+  padding-inline-start: 1.375rem;
+  padding-inline-end: 2rem;
+  cursor: pointer;
+  line-height: 5rem;
+}
+.navbarTwo-login:hover,
+.navbarTwo-download:hover{
+  text-decoration: underline;
+}
+.navbarTwo-download{
+  background-color: var(--primary);
+  color: var(--black);
 }

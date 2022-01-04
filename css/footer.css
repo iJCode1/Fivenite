@@ -1,0 +1,33 @@
+.footer{
+  background-color: var(--black);
+}
+.footer-container{
+  /* max-inline-size: var(--max-inline-size); */
+  margin: 0 auto;
+  padding: 5.6rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-img img{
+  vertical-align: middle;
+}
+.footer-lists{
+  display: flex;
+  gap: 4rem;
+}
+.footer-list{
+  list-style: none;
+  padding: 0;
+}
+.footer-link{
+  text-decoration: none;
+  color: var(--grey);
+  font: var(--body2-semibold);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.footer-link:hover{
+  text-decoration: underline;
+  color: var(--white);
+}

@@ -1,0 +1,35 @@
+.moreInformation{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.moreInformation-img{
+  inline-size: 100%;
+  block-size: 100%;
+}
+.moreInformation-img img{
+  inline-size: inherit;
+  block-size: inherit;
+}
+.moreInformation-cta{
+  background-color: var(--primary);
+  display: inline-block;
+  font: var(--cta);
+  color: var(--black);
+  text-decoration: none;
+  padding-inline-end: 2.5rem;
+  padding-inline-start: 2.5rem;
+  padding-block-end: 2rem;
+  padding-block-start: 2rem;
+  position: absolute;
+  inset-block-start: calc(90% - 8rem);
+  /* inset-block-end: 8rem; */
+  transition: .3s ease-in-out;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.moreInformation-cta:hover{
+  --primary: #16d04b;
+}
+.moreInformation-cta:active{
+  transform: scale(.9);
+}

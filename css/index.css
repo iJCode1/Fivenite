@@ -2,7 +2,8 @@
 @import './navbar.css';
 @import './header.css';
 @import './section.css';
-@import './section-one.css';
+@import './more-information.css';
+@import './footer.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @font-face{
   src: url('../fonts/BurbankBigCondensed-Black.otf');
@@ -18,6 +19,7 @@
   --body1: 900 3.4375rem/4rem Burban;
   --paragraph: 900 1.5rem/2rem Burban;
   --body2-semibold: 600 0.75rem/1.5rem Open Sans;
+  --cta: 900 3rem/normal Burban;
   --open-font: 'Open Sans', sans-serif;
   --max-inline-size: 75rem;
 }
