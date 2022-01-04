@@ -1,0 +1,19 @@
+@font-face{
+  src: url('../fonts/BurbankBigCondensed-Black.otf');
+  font-family: Burban;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+:root{
+  --black: #2a2a2a; 
+  --grey: #cccccc; 
+  --white: #ffffff; 
+  --primary: #ffff01; 
+  --burban-font: Burban, sans-serif;
+  --body1: 900 100%/2rem Burban;
+  --paragraph: 900 1.5rem/1rem Burban;
+  --body2-semibold: 600 0.75rem/1.5rem Open Sans;
+  --open-font: 'Open Sans', sans-serif;
+}
+html{
+  font: var(--body2-semibold);
+}
