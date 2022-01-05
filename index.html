@@ -6,56 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iJCode - Fivenite</title>
   <link rel="stylesheet" href="./css/index.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbarOne">
-      <div class="navbarOne-img">
+  <nav class="navbar" id="navbar">
+    <div class="navbar-logos">
+      <div class="logo-img">
         <img src="./assets/images/logo-epic-game.webp" alt="Logo de Epic Games" width="40" height="40" loading="lazy">
       </div>
-      <div class="navbarOne-img">
+      <div class="logo-img">
         <img src="./assets/images/logo-fortnite.webp" alt="Logo de Fivenite" width="80" height="40" loading="lazy">
       </div>
-      <ol class="navbarOne-list">
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">pase de batalla</a>
-        </li>
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">modo creativo</a>
-        </li>
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">salvar el juego</a>
-        </li>
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">competitivo</a>
-        </li>
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">noticias</a>
-        </li>
-        <li class="navbarOne-item">
-          <a href="#" class="navbarOne-link">ayuda</a>
-        </li>
-      </ol>
     </div>
-    <div class="navbarTwo">
-      <div class="navbarTwo-icons">
-        <i class="navbarTwo-icon"></i>
-        <i class="navbarTwo-icon"></i>
-      </div>
-      <div class="navbarTwo-buttons">
-        <a href="#" class="navbarTwo-login">iniciar sesión</a>
-        <a href="#" class="navbarTwo-download">descargar</a>
-      </div>
-      <div class="navbar-button">
-        <a href="#" class="navbar-hamburger">
-          <img src="./assets/icons/hamburger.png" alt="Icono de hamburguesa">
-        </a>
-      </div>
+    <ol class="navbar-list">
+      <li class="list-item">
+        <a href="#" class="list-link">pase de batalla</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link">modo creativo</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link">salvar el juego</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link">competitivo</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link">noticias</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link">ayuda</a>
+      </li>
+    </ol>
+    <div class="navbar-icons">
+      <i class="navbar-icon"></i>
+      <i class="navbar-icon"></i>
+    </div>
+    <div class="navbar-buttons">
+      <a href="#" class="navbar-login">iniciar sesión</a>
+      <a href="#" class="navbar-download">descargar</a>
+    </div>
+    <div class="navbar-button">
+      <a href="#" class="hamburger-button" id="hamburger-button">
+        <img src="./assets/icons/hamburger.png" alt="Icono de hamburguesa">
+        <img src="./assets/icons/x.png" class="close-button" alt="Icono de cerrar">
+      </a>
     </div>
   </nav>
   <header class="header">
     <div class="header-img">
-      <img src="./assets/images/image3.webp" alt="Imágen del Juego fivenite" loading="lazy">
+      <img src="./assets/images/image3.webp" alt="Imágen del Juego fivenite" loading="lazy" width="1366" height="1026">
     </div>
   </header>
   <div class="container">
@@ -141,5 +144,6 @@
       </div>
     </div>
   </footer>
+  <script src="./js/index.js" type="module"></script>
 </body>
 </html>

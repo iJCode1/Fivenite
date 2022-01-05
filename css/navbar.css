@@ -1,45 +1,48 @@
 .navbar{
   background-color: var(--black);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  --animate-duration: .7s;
 }
-.navbarOne{
+.navbar-logos{
   display: flex;
   gap: 1.5rem;
-  align-items: center;
-  padding-inline-start: 1rem;
-  padding-block-end: .5rem;
+  justify-self: start;
+  padding-inline-start: .5rem;
   padding-block-start: .5rem;
+  padding-block-end: .5rem;
+  grid-area: logos;
+  flex: 1;
 }
-.navbarOne-img img{
+.logo-img img{
   vertical-align: middle;
 }
-.navbarOne-list{
+.navbar-list{
   display: none;
   list-style: none;
   gap: 2rem;
   padding-inline-start: 0;
+  flex: 1;
 }
-.navbarOne-link{
+.list-link{
   text-decoration: none;
   font: var(--body2-semibold);
   color: var(--grey);
   text-transform: uppercase;
+  font-size: .825rem;
 }
-.navbarOne-link:hover{
+.list-link:hover{
   color: var(--white);
   text-decoration: underline;
 }
-.navbarTwo{
-  display: flex;
-  gap: 3.5rem;
-  align-items: center;
-}
-.navbarTwo-icons{
+.navbar-icons{
   display: none;
   gap: 2rem;
+  margin-inline-end: 1rem;
 }
-.navbarTwo-icon{
+.navbar-icon{
   display: inline-block;
   inline-size: 1.5rem;
   block-size: 1.5rem;
@@ -48,14 +51,14 @@
   background-size: cover;
   cursor: pointer;
 }
-.navbarTwo-icon:nth-of-type(2){
+.navbar-icon:nth-of-type(2){
   background-image: url('../assets/icons/globe.svg');
 }
-.navbarTwo-buttons{
+.navbar-buttons{
   display: none;
 }
-.navbarTwo-login,
-.navbarTwo-download{
+.navbar-login,
+.navbar-download{
   font: var(--body2-semibold);
   text-decoration: none;
   text-transform: uppercase;
@@ -65,13 +68,13 @@
   padding-inline-start: 1.375rem;
   padding-inline-end: 2rem;
   cursor: pointer;
-  line-height: 5rem;
+  line-height: 4.5rem;
 }
-.navbarTwo-login:hover,
-.navbarTwo-download:hover{
+.navbar-login:hover,
+.navbar-download:hover{
   text-decoration: underline;
 }
-.navbarTwo-download{
+.navbar-download{
   background-color: var(--primary);
   color: var(--black);
 }
@@ -80,20 +83,80 @@
   align-items: center;
   padding-inline-end: 1rem;
 }
-.navbar-hamburger img{
+.hamburger-button img{
   vertical-align: middle;
 }
+.close-button{
+  display: none;
+}
+.navbar.is-toggle{
+  min-block-size: 100vh;
+  background-color: var(--black);
+  inline-size: 100%;
+  margin-inline-start: 0;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "logos iconos cerrar"
+  "opciones opciones opciones"
+  "cta cta cta";
+  inset-block-end: 0;
+  inset-inline-start: 0;
+}
+.navbar.is-toggle .navbar-list{
+  display: flex;
+  flex-direction: column;
+  grid-area: ociones;
+}
+.navbar.is-toggle .navbar-icons{
+  display: flex;
+  grid-area: iconos;
+  margin: 0 auto;
+  margin-inline-end: 2rem;
+}
+.navbar.is-toggle .navbar-button{
+  justify-content: center;
+}
+.navbar.is-toggle .hamburger-button img:nth-of-type(1){
+  display: none;
+}
+.navbar.is-toggle .close-button{
+  grid-area: cerrar;
+  display: inline-block;
+}
+.navbar.is-toggle .navbar-list{
+  grid-area: opciones;
+  align-self: flex-start;
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+}
+.navbar.is-toggle .navbar-buttons{
+  display: flex;
+  grid-area: cta;
+}
+.navbar.is-toggle .navbar-buttons a{
+  flex: 1;
+  text-align: center;
+}
 @media screen and (min-width: 1024px){
-  .navbarOne-list{
+  .navbar-logos{
+    flex: 0;
+  }
+  .navbar-list{
     display: flex;
+  }
+  .navbarTwo {
+    display: flex;
+  }
+  .navbar-icons{
+    display: flex;
+    gap: 2rem;
   }
   .navbar-button{
     display: none;
   }
-  .navbarTwo-icons{
-    display: flex;
-  }
-  .navbarTwo-buttons{
-    display: block;
+  .navbar-buttons{
+    display: inline-block;
   }
 }
